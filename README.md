@@ -130,17 +130,16 @@ http://localhost:3000
 
 ---
 
+
 ## Demonstration
 
-The project successfully demonstrates:
+The project was successfully tested by generating CPU load on the EC2 instance.
 
-- Deployment of a Node.js application on AWS.
-- Load balancing using an Application Load Balancer.
-- Automatic instance creation during increased CPU utilization.
-- Automatic scaling based on Amazon CloudWatch metrics.
-- Health monitoring using Target Groups.
+The Auto Scaling Group automatically launched additional EC2 instances when CPU utilization exceeded the configured threshold.
 
----
+After CPU utilization decreased, Auto Scaling terminated the unnecessary instances automatically.
+
+This demonstrates dynamic scaling using Amazon CloudWatch metrics.
 
 ## Learning Outcomes
 
@@ -159,10 +158,8 @@ Through this project, I learned:
 
 ---
 
-## Author
+## Conclusion
 
-**Nayandeva**
+This project demonstrates the implementation of an Auto Scaling infrastructure on AWS using EC2, Application Load Balancer, Launch Templates, Auto Scaling Groups, and Amazon CloudWatch.
 
-Summer Training Project
-
-Cloud Computing and DevOps
+The application successfully scaled out under increased CPU utilization and scaled in when the load decreased, ensuring efficient resource utilization and high availability.
